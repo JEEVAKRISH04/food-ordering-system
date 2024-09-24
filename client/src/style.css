@@ -1,0 +1,320 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.s-m{
+  max-width: 1200px;
+  margin: 1rem auto;
+  
+}
+.s-l{
+  max-width: 1450px;
+  margin: 1rem auto;
+  
+}
+.head{
+  background: #609dfe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.light-border{
+  border-bottom: 2px solid rgb(213, 213, 213);
+}
+.pro{
+  display: flex;
+  flex-direction: column;
+  padding: .3rem 0;
+}
+.pro>label{
+  padding: .5rem 0;
+  font-size: 1.1rem;
+}
+input,select,button{
+  height: 2.3rem;
+  padding-left: .8rem;
+  border: 1.5px solid rgb(213, 213, 213);
+  border-radius: .2rem;
+}
+textarea{
+  border: 1.5px solid rgb(213, 213, 213);
+  border-radius: .2rem;
+  padding: .6rem .8rem;
+}
+.food_1{
+  width: 28rem;
+  height: 18rem;
+}
+
+/**/
+
+tbody>tr>:nth-child(1){
+  color: black;
+  font-weight: bolder;
+}
+tbody>tr>:nth-child(7)>:nth-child(1){
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+tbody>tr>:nth-child(7)>:nth-child(2){
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/**/
+
+.address>h6{
+  font-weight: 400;
+}
+
+
+/**/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: orange;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px orange;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**/
+.acc>h6{
+  cursor: pointer;
+}
+
+/**/
+.custom{
+  background: #000;
+}
+
+
+/**/
+
+/* Body*/
+.body{
+  background-color: #efeff7;
+  width: 100%;
+  padding: 30px;
+}
+/*four boxes*/
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    height: 180px;
+    width: 260px;
+    background-color: #ffffff;
+    padding: 8px;
+}
+ 
+.box-child div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box-child1{
+    margin-top:20px;
+    height: 350px;
+    width: 550px;
+    background-color: #ffffff;
+}
+ 
+.box-child div h4{
+    background-color: black;
+    font-size: .8rem;
+    color: white;
+    height: 35px;
+    width: 65px;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-child h3{
+  font-size: 1.5rem;
+}
+/*two boxes*/
+
+.parent-boxes{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+/*box-right*/
+.box-child1{
+    padding: 10px;
+}
+.box-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-heading button{
+  background-color: orange;
+  color: white;
+  border: none;
+  padding:10px;
+  
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    
+}
+th {
+    background-color: #efeff7;
+    font-weight: bold;
+    
+}
+
+
+/*box-left*/
+
+.box-heading select{
+  height: 2.5rem;
+  width: 8rem;
+  font-size: .9rem;
+}
+.percent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percent .percent-left{
+    background-color:#fe4d00 ;
+    height:13px;
+    width: 180px;
+    font-size: 13px;
+      color: white;
+      text-align: center;
+    border-top-left-radius: 5px;
+}
+.percent .percent-right{
+    background-color:#efeff7;
+    height:15px;
+    width: 300px;
+    font-size: 13px;
+    
+}
+.percent-parent h4{
+  font-size: 1.2rem;
+  margin-left: 1.4rem;
+}
+.percent-parent h4{margin-top: 20px;}
+
+.accordion-button:not(.collapsed){ 
+    color: orangered; 
+    box-shadow:none;
+}
+
+.thumbshover{
+  padding: 8px;
+}
+.thumbshover:hover{
+  background: #bfbfbf;
+  color: blue;
+  border-radius: 50%;
+}
+
+.successfullanimation{
+  background-color: rgba(14, 126, 14, 0.815);
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding:7px 12px;
+  margin-right: .6rem;
+}
+
+/*--- OrderSuccessMessage ---*/
+.order-success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.order-success-message p {
+  margin: 0;
+}
+
+.order-success-message.show {
+  opacity: 1;
+}
+
+.order-success-message.hide {
+  opacity: 0;
+}
+
